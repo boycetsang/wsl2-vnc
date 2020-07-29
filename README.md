@@ -6,8 +6,8 @@ Resources to run linux-based VNC that can be remotely controlled
 This repo is only to consolidate the resources I have found to enable linux-based VNC server on WSL2. This is currently as of Jul 2020. This worked for me and so I wanted to write this down. Since WSL2 is currently at beta, I expect this to change and be less difficult later.
 
 ## Step 1: Enable Beta Windows to be installed
-Join the [Windows Insider Program](https://insider.windows.com/en-us/)
-Go to Settings in Windows and update until the build is at least 19041.
+Join the [Windows Insider Program](https://insider.windows.com/en-us/)  
+Go to Settings in Windows and update until the build is at least 19041.  
 Also, download Windows Terminal in Microsoft Store.
 
 ## Step 2: Install Ubuntu with WSL2
@@ -19,7 +19,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 wsl --set-default-version 2
 
 ```
-Then download the latest [Ubuntu](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701) from Microsoft Store.
+Then download the latest [Ubuntu](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701) from Microsoft Store.  
 Add this section to the settings text file of Windows Terminal
 ```
 {
@@ -43,7 +43,7 @@ Add this section to the settings text file of Windows Terminal
 ```
 
 ## Step 3: Install oh-my-zsh and vncserver on Ubuntu
-Open a new Ubuntu window in Windows Terminal (with admin permission).
+Open a new Ubuntu window in Windows Terminal (with admin permission).  
 Then execute
 ```
 sudo apt install zsh
@@ -53,7 +53,7 @@ sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils
 sudo apt install tigervnc-standalone-server tigervnc-common
 ```
 ## Step 4: Install systemd-genie
-The following is based on contribution from [tdcosta100/WSL2GUIXvnc-en.md](https://gist.github.com/tdcosta100/385636cbae39fc8cd0937139e87b1c74)
+The following is based on contribution from [tdcosta100/WSL2GUIXvnc-en.md](https://gist.github.com/tdcosta100/385636cbae39fc8cd0937139e87b1c74)  
 The details are copied here in case the page is gone.
 ```
 sudo apt install tasksel
