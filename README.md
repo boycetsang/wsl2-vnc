@@ -124,7 +124,7 @@ If you stopped here, you will be able to access the VNC session by `localhost:0`
 
 This is directly copied from this [contribution](https://github.com/microsoft/WSL/issues/4150).
 
-Paste the following to a text file in Windows.
+Paste the following to a text file named `wsl2port.ps1` in Windows.
 ```
 $remoteport = bash.exe -c "ip addr | grep -Ee 'inet.*eth0'"
 $found = $remoteport -match '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}';
@@ -166,4 +166,4 @@ Then execute this file on PowerShell. You may have to change the ExecutionPolicy
 Every time the computer is rebooted, you will need to re-run this script. Or you can also use the Windows Task Scheduler to run this automatically after startup.
 
 ## Step 6: Access VNC remotely
-Now you shoule be able to access the VNC session by <COMPUTE_NAME>:0. You can find your comeputer name by [This PC] > [Properties]
+Now you shoule be able to access the VNC session by <COMPUTE_NAME>:0. You can find your comeputer name by [This PC] > [Properties]. You can use the RealVNC on different platforms for this purpose.
